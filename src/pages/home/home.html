@@ -1,0 +1,26 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Yfitops</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+
+        <ion-item>
+            <ion-label stacked>Usuário</ion-label>
+            <ion-input type="text" name="username" [(ngModel)]="user.username"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label stacked>Senha</ion-label>
+            <ion-input type="password" name="password" [(ngModel)]="user.password"></ion-input>
+        </ion-item>
+
+    </ion-list>
+
+    <div padding>
+        <button ion-button color="primary" (click)="entrar()" block>Entrar</button>
+    </div>
+
+</ion-content>
