@@ -16,7 +16,8 @@ export class HomePage {
   entrar(): void{
     this.webservice.login({
       'password': this.user.password,
-      'username': this.user.username
+      'username': this.user.username,
+      'rememberMe' : true
     }).subscribe(
       data => {
         this.webservice.savetoken(data['id_token']);

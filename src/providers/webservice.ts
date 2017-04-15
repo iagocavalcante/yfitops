@@ -11,7 +11,7 @@ import 'rxjs/add/operator/map';
 */
 @Injectable()
 export class Webservice {
-  private url:string = 'http://localhost:8080/api';
+  private url:string = 'https://teste-jhip.herokuapp.com/api';
   headers:Headers;
   bandaId: any;
   albumId: any;
